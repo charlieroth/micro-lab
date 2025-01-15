@@ -25,6 +25,9 @@ embassy-time = { version = "0.4.0", features = [
     "defmt",
     "defmt-timestamp-uptime",
 ] }
+futures = { version = "0.3.31", default-features = false, features = [
+    "async-await",
+] }
 embassy-futures = { version = "0.1.1", features = ["defmt"] }
 embassy-sync = { version = "0.6.1", features = ["defmt"] }
 embedded-hal-async = { version = "1.0.0" }
